@@ -12,28 +12,34 @@
    <!--Creating the navigation bar within the head tag using lists-->
    <div id="header">
     <header>
-        <!--Adding a website logo on the navigation bar using favicon-->
-        <!--Image sourced from brandfetch and transformed into an icon in favicon web site-->
-        <img width="30" src="favicon.ico" alt="Docplanner Logo">
-
-        <!--Logo Name of the web page-->
-        <h1 id="logo">Docplanner Group</h1>
-
+        
         <!--Creating the navigation bar-->
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="iconnav">
+            <!--Adding a website logo on the navigation bar using favicon-->
+            <!--Image sourced from brandfetch and transformed into an icon in favicon web site-->
+            <img id="siteicon" width="30" src="favicon.ico" alt="Docplanner Logo">
+            <br>
+            <!--Logo Name of the web page-->
+            <h1 id="navlogo"><span id="navspan">Docplanner </span>Group</h1></h1>
+            </div>
+
+
+            <div class="navitems">
+              <ul class="navlist">
                 <li>
                     <a class="navlink" href="index.html">About us</a>
                 </li>
 
                 <li>
-                    <a class="navlink" href="career.html">Career</a>
+                    <a class="navlink" href="#">Career</a>
                 </li>
 
                 <li>
-                    <a class="navlink" href="departments.html">Departments</a>
+                    <a class="navlink" href="#">Departments</a>
                 </li>
-            </ul>
+              </ul>
+            </div>
         </nav>
 
     </header>
@@ -45,32 +51,39 @@
 
    <!--div section to show the main part of the webpage-->
    <div class="main">
-      <img width="25" src="favicon.ico" alt="Docplanner Logo">
-      <h2 id="descriptionheader">
+      <img id="docicon" width="25" src="favicon.ico" alt="Docplanner Logo">
+      <div class="parcontainer">
+      <p id="descriptionheader">
         Making the healthcare experience more human
-      </h2>
+      </p>
 
-      <p>
+      <div class="parmain">
+
+      <p class="parmain1">
         We want patients to find the perfect doctor and book
         an appointment in the most easy way. The patient journey 
         should be enjoyable, and that's why we are always next to them:
         to help them find the best possible care. Anytime, anywhere.
       </p>
 
-      <p>
+      <p class="parmain2">
         We also help doctors to better manage their practice and build their online reputation.
         with our integrated end-to-end solution, doctors are able not only to improve their online
         presence, but also to devote their time to what really matters: their patients.
       </p>
+      </div>
+      </div>
 
-      <section id="patients">
+      <div class="findCountry">
+      <div id="patients">
+        <img id="patientsicon" width="25" src="patients.ico" alt="patients">
         <h2>For patients</h2>
         <p>
             Find a doctor, book a visit and solve any health-related doubt
         </p>
 
         <!--A dropdown menu for a usre to select a country-->
-        <select name="country" id="country">
+        <select name="country" id="patientcountry">
             <option value="choosecountry">Choose country</option>
             <option value="argentina">Argentina</option>
             <option value="brazil">Brazil</option>
@@ -85,14 +98,15 @@
             <option value="spain">Spain</option>
             <option value="turkey">Turkey</option>
         </select>
-      </section>
+      </div>
 
-      <section id="doctors">
+      <div id="doctors">
+        <img id="doctoricon" width="25" src="doctor.ico" alt="patients">
         <h2>For doctors</h2>
         <p>Save time managing visits and cut no-shows by half</p>
 
         <!--A dropdown menu for a usre to select a country-->
-        <select name="country" id="country">
+        <select name="country" id="doctorcountry">
             <option value="choosecountry">Choose country</option>
             <option value="argentina">Argentina</option>
             <option value="brazil">Brazil</option>
@@ -107,9 +121,10 @@
             <option value="spain">Spain</option>
             <option value="turkey">Turkey</option>
         </select>
-      </section>
+      </div>
 
-      <section id="clinics">
+      <div id="clinics">
+        <img id="clinicsicon" width="25" src="hospital.ico" alt="patients">
         <h2>For clinics</h2>
         <p>Deliver an exceptional patient experience in your clinic</p>
 
@@ -126,6 +141,7 @@
         </select>
         <br>
         <br>
+        
 
         <!--Dropdown menu to select countries having more than 20 specialists-->
         <select name="specialistsmore" id="specialistsmore">More than 20 specialists
@@ -136,29 +152,47 @@
             <option value="poland">Poland</option>
             <option value="spain">Spain</option>
         </select>
-      </section>
+      </div>
+      </div>
+    </div>
 
-      <p>We are a global company with local culture</p>
+    <div class="culture">
+      <div class="culturecontainer">
+        <p id="culturepar">We are a global company with local culture</p>
+      </div>
 
       <!--Docplanner partners logos-->
+      <div class="partnerlogos">
+        <img src="ZnanyLekarz.png" alt="Znamy Lekarz">
+        <img src="Doctoralia.png" alt="Doctoralia">
+        <img src="miodottore.png" alt="Mio Dottore">
+        <img src="takvimi.jpg" alt="Doktor Takvimi">
+        <img id ="lekar" src="ZnamyLekar.png" alt="Znamy Lekar">
+        <img id="jameda" src="jameda.png" alt="Jameda">
+        <img src="TuoTempo.png" alt="Tuotempo">
+        <img id="gipo" src="gipo.png" alt="gipo">
+        <img id="cloud" src="cliniccloud.png" alt="Clinic Cloud">
+        <img id="feegow" src="FeegowClinicLogo.png" alt="Feegow">
+      </div>
 
-
-
-   </div>
+    </div>
+   
    <hr>
 
    <!--div to show a statistical summary of docplanner-->
    <div class="statistics">
-    <h2>The world's biggest healthcare platform</h2>
+    <div class="statleft">
+    <p class="statheading">The world's biggest healthcare platform<p>
     <p>We work from 9 offices all over the world, bringing
         Docplanner Group to life in 13 countries.
     </p>
-
     <!--Displaying the logo in this div section-->
-    <img width="300" src="favicon.ico" alt="Docplanner Logo">
-
+    <img width="300" src="docplannerlogo.png" alt="Docplanner Logo">
+     </div>
+    <div class="statright">
     <section id="countriesstat">
-        <h3>Leader in 13 countries</h3>
+      <img id="countriesicon" width="25" src="countries.ico" alt="patients">
+        <p class="statheading">Leader in 13 countries</p>
         <p>
            Poland, Brazil, Mexico, Spain, Italy, Germany, 
            Turkey, Colombia, Czech Republic, Portugal, Argentina, 
@@ -167,36 +201,167 @@
     </section>
 
     <section id="appointmentsstat">
-        <h3>15,000,000 appointments</h3>
+      <img id="appointmentsicon" width="25" src="appointments.ico" alt="patients">
+        <p class="statheading">15,000,000 appointments</p>
         <p>booked last month</p>
     </section>
 
     <section id="patientsstat">
-        <h3>90,000,000 patients</h3>
+      <img id="patientsicon" width="25" src="patients.ico" alt="patients">
+        <p class="statheading">90,000,000 patients</p>
         <p>visit our websites each month</p>
     </section>
 
     <section id="doctorsstat">
-        <h3>210,000 active doctors</h3>
+      <img id="doctorsicon" width="25" src="doctor.ico" alt="patients">
+        <p class="statheading">210,000 active doctors</p>
         <p>trust our solutions</p>
     </section>
+    </div>
    </div>
+   <hr>
 
    <div class="location">
-      <h3>Improve the lives of millions. <br>
+      <p class="locationheader">Improve the lives of millions. <br>
           Change yours forever.
-      </h3>
+      </p>
 
-      <p>
+      <p id="locationstat">
         More than 2800 team mates share our same vision,goals
         and passion. <br> With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio,
         Bologna, Mexico City and Curitiba, our search for great talent never stops. 
       </p>
+      <br>
 
-      <section id="">
+      <!--Using div containers to merge images and buttons-->
+     <div class="branchContainer">
+       <div class="cityContainer">
+        
+          <img class="cityImage" src="warsaw.avif" width="100px" height="100px" alt="Warsaw City">
+        
+          <p>Warsaw</p>
 
-      </section>
-   </div>
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+       </div>
+      <br>
+
+      <div class="cityContainer">
+        
+          <img class="cityImage" src="barcelona.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Barcelona</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+            <img class="cityImage" src="munich.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Munich</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+            <img class="cityImage" src="istanbul.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Istanbul</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+        <img class="cityImage" src="rome.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Rome</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+        <img class="cityImage" src="bologna.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Bologna</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+        <img class="cityImage" src="curitiba.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Curitiba</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+        <img class="cityImage" src="riodejaneiro.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Rio De Janeiro</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="cityContainer">
+        
+        <img class="cityImage" src="mexicocity.jpg" width="100px" height="100px" alt="Warsaw City">
+        
+        <p>Mexico City</p>
+        
+        <div class="imageButton">
+            <button class="cityopenings" value="openings">See Openings</button>
+        </div>
+
+      </div>
+      <br>
+      <br>
+
+      </div>
+    </div>
+  </div>
+
+      <p class="currentopenings">Sounds interesting? Join us now!</p>
+      <button class="currentopeningsbutton" value="openings">
+        SEE ALL CURRENT OPENINGS
+      </button>
+     
    <hr>
 
    <!--footer to display the bottom part of the webpage-->
@@ -225,7 +390,7 @@
     </p>
 
     <!--Using copyright symbol-->
-    www.docplanner.com &copy 2023
+    <p id="footerlnk">www.docplanner.com &copy 2023 </p>
 
    </footer>
 

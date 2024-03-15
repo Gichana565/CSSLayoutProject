@@ -1,3 +1,456 @@
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 0 75px;
 }
+
+header{
+    display: flex;
+    position: sticky;
+}
+
+/* border:none removes the line from the webpage */
+hr{
+   border: none;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0;
+}
+
+/* Setting the color of Docplanner Heading in navbar */
+#navspan{
+    color: #04C3A5;
+}
+
+/* Setting the color of 'Group' word in navbar */
+#navlogo{
+    color: #ABABAB;
+}
+
+.iconnav{
+    display: flex;
+    align-items: flex-start;
+    padding: 34px 28px;
+}
+
+#siteicon{
+    padding: 23px 28px;
+}
+
+.navitems{
+    display: flex;
+    align-content: flex-end;
+}
+
+.navlist{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* Moving the list content to the right side of the page */
+    float: right;
+    padding: 43px;
+}
+
+.navlist li{
+    margin-right: 20px;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: #ABABAB;
+}
+
+.navlist li a:hover{
+    color: #04C3A5;
+}
+
+.navlink:active{
+    color: #04C3A5;    
+}
+
+/* Centering the Image Icon to the center of the container */
+.main #docicon{
+   display: block;
+   margin: 0 auto;
+}
+
+/* Centering the code of text after the docplanner icon */
+#descriptionheader {
+    text-align: center;
+    color: #03B39B;
+    font-size: 20px;
+}
+
+.parmain{
+    justify-content: center;
+    /* Using CSS Grid */
+    display: grid;
+    /* Creating two equal width columns */
+    grid-template-columns: 1fr 1fr;
+    /* Adding spacing between columns */
+    grid-gap: 20px;
+}
+
+/* Adding media queries to adjust the layout for different screen sizes */
+@media (max-width: 768px){
+    .parmain{
+        /*switching to single column layout on smaller screens */
+        grid-template-columns: 1fr;
+    }
+}
+
+.parmain1 {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 0;
+   
+}
+
+.parmain2 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.locationheader{
+    color:#03B39B;
+    font-size: 20px;
+}
+
+#patients{
+    background-color:#04CCB1 ;
+    color: white;
+    border: 3px hidden black;
+    border-radius: 5px;
+}
+
+#doctors{
+    background-color: #3D83DF;
+    color: white;
+    border: 3px hidden black;
+    border-radius: 5px;
+}
+
+#clinics{
+    background-color:#1B2734;
+    color: white;
+    border: 3px hidden black;
+    border-radius: 5px;
+}
+
+/* Changing the background-color and font of the dropdown menus in each container */
+#patientcountry{
+    background-color:#04CCB1 ;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#doctorcountry{
+    background-color: #3D83DF;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#specialists20 {
+    background-color:#1B2734;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#specialistsmore{
+    background-color:#1B2734;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* Changing the font-color and size of the local culture statement */
+#culturepar{
+    color: #03B39B;
+    font-size: 20px;
+}
+
+.culture{
+    display:flex;
+    grid-template-columns: repeat(2, .05);
+    grid-gap: 10px 10px;
+    justify-content:center;
+}
+
+.culturecontainer{
+    display:grid;
+    margin: 10px;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.partnerlogos img{
+    display:grid;
+    grid-template-columns: repeat(4, .05);
+    grid-gap: 10px 10px;
+    justify-content:center;
+}
+
+.partnerlogos img{
+    width: 120px;
+    height: 80px;
+}
+.partnerlogos > *{
+    display: grid;
+    grid-template-columns: repeat(4, .05);
+    flex-wrap: wrap;
+}
+
+/* Resizing some logo images */
+#lekar{
+    width: 100px;
+    height: 15px;
+}
+
+#jameda{
+    width: 120px;
+    height: 30px;
+}
+
+#gipo{
+    width: 50px;
+    height: 50px;
+}
+
+#cloud{
+    width: 70px;
+    height: 60px;
+}
+
+#feegow{
+    width: 120px;
+    height: 36px;
+}
+
+
+.statistics{
+    background-color: #D0FAF4;
+    display: grid;
+    grid-template-columns: repeat(2, 0.05fr);
+    grid-gap: 10px 10px;
+    flex-wrap: wrap;
+
+}
+
+.statleft{
+    align-items: center;
+    margin: 100px;
+    padding: 100px;
+}
+
+
+/* Using display:grid on stat div */
+.statright{
+    display: grid;
+    grid-template-columns: repeat(2,.05fr);
+    justify-content: end;
+    margin: 10px;
+    padding: 30px;
+}
+
+.findCountry{
+    /* Displaying div containers using grid */
+    display: grid;
+    grid-template-columns: repeat(3, .05fr);
+    grid-gap: 20px 20px;
+    justify-content: center;
+}
+
+.findCountry > *{
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.statheading{
+    color: #03B39B;
+    font-size: 20px;
+}
+
+/* Putting content within boxes using width and height attributes */
+.statright > *{
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Centering the paragraph below the 'Improve your lives heading....'*/
+#locationstat{
+    text-align:center;
+}
+
+.locationheader{
+    text-align: center;
+}
+
+
+.branchContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.branchContainer > *{
+    justify-content:center;
+    margin: 10px;
+}
+
+/* Drawing a border line around a city container */
+.cityContainer{
+    width: 250px;
+    height: 290px;
+    /* Putting rounded corners in the image containers */
+    border-radius: 5px;
+}
+
+.branchContainer .cityContainer:hover{
+    border: 3px inset gray;
+
+}
+
+.cityContainer .cityImage{
+    width: 250px;
+    height: 210px;
+}
+
+.cityContainer p{
+    margin: 0px;
+    padding: 10px;
+    color: black;
+}
+
+.cityopenings{
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 1px 145px 50px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.cityopenings:hover,
+.cityopenings:focus {
+  background-color: #07c;
+}
+
+.cityopenings:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.cityopenings:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+.currentopenings{
+    text-align: center;
+    font-size: 20px;
+}
+
+.currentopeningsbutton{
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: auto;
+  align-items: center;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.currentopeningsbutton:hover,
+.currentopeningsbutton:focus {
+  background-color: #07c;
+}
+
+.currentopeningsbutton:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.currentopeningsbutton:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+
+#footerpar {
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+}
+
+#footerpar a {
+    text-decoration: none;
+    color: #4284BB;
+}
+
+#cookies {
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+}
+
+#footerlnk {
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+}
+
